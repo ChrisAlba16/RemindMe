@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_pagina_inicio">
+
+    <fragment
+        android:id="@+id/nav_pagina_inicio"
+        android:name="com.example.remindme.PaginaInicioFragment"
+        android:label="@string/menu_pagina_inicio"
+        tools:layout="@layout/fragment_pagina_inicio" />
+
+    <fragment
+        android:id="@+id/nav_calendario"
+        android:name="com.example.remindme.CalendarioFragment"
+        android:label="@string/menu_calendario"
+        tools:layout="@layout/fragment_calendario" />
+
+    <fragment
+        android:id="@+id/nav_notas"
+        android:name="com.example.remindme.NotasFragment"
+        android:label="@string/menu_notas"
+        tools:layout="@layout/fragment_notas" />
+    <fragment
+        android:id="@+id/nav_pendientes"
+        android:name="com.example.remindme.PendientesFragment"
+        android:label="@string/menu_pendientes"
+        tools:layout="@layout/fragment_pendientes" />
+</navigation>
